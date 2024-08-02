@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HelpVc" customModule="Speedo_Transfer" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F3n-J0-7Ig" customClass="CardView" customModule="Speedo_Transfer" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="537" width="393" height="315"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pg0-zb-FOo">
+                            <rect key="frame" x="172" y="24" width="49" height="4"/>
+                            <color key="backgroundColor" red="0.23529411759999999" green="0.2274509804" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="4" id="ShG-Zu-AKD"/>
+                                <constraint firstAttribute="width" constant="49" id="kgj-Ik-MNd"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="IsI-Cq-Tyt">
+                            <rect key="frame" x="82.666666666666686" y="78" width="228" height="140"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9bd-F1-2VX" customClass="CardView" customModule="Speedo_Transfer" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="101" height="140"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cz8-ME-jjt">
+                                            <rect key="frame" x="23" y="8" width="55" height="55"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email" translatesAutoresizingMaskIntoConstraints="NO" id="BMV-MF-76N">
+                                                    <rect key="frame" x="15" y="15" width="25" height="25"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.95294117649999999" green="0.91372549020000005" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="BMV-MF-76N" secondAttribute="trailing" constant="15" id="KBW-iF-IzK"/>
+                                                <constraint firstItem="BMV-MF-76N" firstAttribute="leading" secondItem="cz8-ME-jjt" secondAttribute="leading" constant="15" id="TtS-9m-sk5"/>
+                                                <constraint firstAttribute="height" constant="55" id="WXW-pJ-Pny"/>
+                                                <constraint firstItem="BMV-MF-76N" firstAttribute="top" secondItem="cz8-ME-jjt" secondAttribute="top" constant="15" id="gFx-36-Nuw"/>
+                                                <constraint firstAttribute="bottom" secondItem="BMV-MF-76N" secondAttribute="bottom" constant="15" id="pQe-bg-Mdb"/>
+                                                <constraint firstAttribute="width" secondItem="cz8-ME-jjt" secondAttribute="height" id="vtY-wR-nox"/>
+                                            </constraints>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1iL-5l-Je4">
+                                            <rect key="frame" x="8.3333333333333286" y="77" width="84.333333333333329" height="20.333333333333329"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="1iL-5l-Je4" firstAttribute="top" secondItem="cz8-ME-jjt" secondAttribute="bottom" constant="14" id="9d9-Ne-v8t"/>
+                                        <constraint firstItem="1iL-5l-Je4" firstAttribute="centerX" secondItem="9bd-F1-2VX" secondAttribute="centerX" id="DqC-6W-Cva"/>
+                                        <constraint firstItem="cz8-ME-jjt" firstAttribute="top" secondItem="9bd-F1-2VX" secondAttribute="topMargin" id="HUF-5I-dGw"/>
+                                        <constraint firstAttribute="height" constant="140" id="Mjc-JS-jTh"/>
+                                        <constraint firstItem="cz8-ME-jjt" firstAttribute="leading" secondItem="9bd-F1-2VX" secondAttribute="leading" constant="23" id="nRo-tP-TfP"/>
+                                        <constraint firstItem="cz8-ME-jjt" firstAttribute="centerX" secondItem="1iL-5l-Je4" secondAttribute="centerX" id="vVT-Ec-kBR"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8XU-vx-qaw" customClass="CardView" customModule="Speedo_Transfer" customModuleProvider="target">
+                                    <rect key="frame" x="127" y="0.0" width="101" height="140"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1KL-hX-9Em">
+                                            <rect key="frame" x="23" y="8" width="55" height="55"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email" translatesAutoresizingMaskIntoConstraints="NO" id="uc2-Ol-Hlz">
+                                                    <rect key="frame" x="15" y="15" width="25" height="25"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.95294117649999999" green="0.91372549020000005" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="uc2-Ol-Hlz" secondAttribute="trailing" constant="15" id="6tz-7z-6cU"/>
+                                                <constraint firstAttribute="width" secondItem="1KL-hX-9Em" secondAttribute="height" id="P1w-Um-lSm"/>
+                                                <constraint firstAttribute="bottom" secondItem="uc2-Ol-Hlz" secondAttribute="bottom" constant="15" id="Qt6-za-Hjh"/>
+                                                <constraint firstItem="uc2-Ol-Hlz" firstAttribute="leading" secondItem="1KL-hX-9Em" secondAttribute="leading" constant="15" id="hbC-GT-ml9"/>
+                                                <constraint firstAttribute="height" constant="55" id="mS9-hn-jSP"/>
+                                                <constraint firstItem="uc2-Ol-Hlz" firstAttribute="top" secondItem="1KL-hX-9Em" secondAttribute="top" constant="15" id="wVX-v8-39u"/>
+                                            </constraints>
+                                        </view>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="D67-9b-w8A">
+                                            <rect key="frame" x="8.3333333333333428" y="77" width="84.333333333333329" height="40.666666666666657"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Qe-EE-HDx">
+                                                    <rect key="frame" x="0.0" y="0.0" width="84.333333333333329" height="20.333333333333332"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="19899" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V71-Q7-p4K">
+                                                    <rect key="frame" x="17.333333333333346" y="20.333333333333371" width="49.333333333333343" height="20.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" name="Primary 1"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="D67-9b-w8A" firstAttribute="centerX" secondItem="8XU-vx-qaw" secondAttribute="centerX" id="CeB-mO-AqV"/>
+                                        <constraint firstItem="1KL-hX-9Em" firstAttribute="leading" secondItem="8XU-vx-qaw" secondAttribute="leading" constant="23" id="GVF-GC-ahA"/>
+                                        <constraint firstAttribute="height" constant="140" id="b0W-u3-F3a"/>
+                                        <constraint firstItem="1KL-hX-9Em" firstAttribute="centerX" secondItem="D67-9b-w8A" secondAttribute="centerX" id="bXL-Ew-eZN"/>
+                                        <constraint firstItem="D67-9b-w8A" firstAttribute="top" secondItem="1KL-hX-9Em" secondAttribute="bottom" constant="14" id="mBL-fA-zgc"/>
+                                        <constraint firstItem="1KL-hX-9Em" firstAttribute="top" secondItem="8XU-vx-qaw" secondAttribute="topMargin" id="xIU-Je-g5D"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="IsI-Cq-Tyt" firstAttribute="centerX" secondItem="F3n-J0-7Ig" secondAttribute="centerX" id="1n1-Zb-Bkx"/>
+                        <constraint firstItem="pg0-zb-FOo" firstAttribute="top" secondItem="F3n-J0-7Ig" secondAttribute="top" constant="24" id="EDW-ZK-pc8"/>
+                        <constraint firstAttribute="height" constant="315" id="qQW-9x-Bpg"/>
+                        <constraint firstItem="IsI-Cq-Tyt" firstAttribute="top" secondItem="pg0-zb-FOo" secondAttribute="bottom" constant="50" id="shp-Nu-3pL"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRdis">
+                            <real key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="pg0-zb-FOo" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="4Ug-RB-6bH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="F3n-J0-7Ig" secondAttribute="trailing" id="9Kr-Cv-Wu4"/>
+                <constraint firstAttribute="bottom" secondItem="F3n-J0-7Ig" secondAttribute="bottom" id="Vlf-U7-gPy"/>
+                <constraint firstItem="F3n-J0-7Ig" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ZFm-Z9-b0M"/>
+            </constraints>
+            <point key="canvasLocation" x="67.938931297709928" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="email" width="24" height="24"/>
+        <namedColor name="Primary 1">
+            <color red="0.52941176470588236" green="0.11764705882352941" blue="0.20784313725490197" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

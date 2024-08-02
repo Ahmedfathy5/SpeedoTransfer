@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditProfileVc" customModule="Speedo_Transfer" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="mNX-Hd-Rl3">
+                    <rect key="frame" x="16" y="82" width="361" height="472"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FullName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jwp-xJ-d5B">
+                            <rect key="frame" x="0.0" y="0.0" width="361" height="52"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Cardholder Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vrT-Li-2of" customClass="PaddingTextField" customModule="Speedo_Transfer" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="60" width="361" height="52"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="52" id="4Ob-Ch-Gs4"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                    <real key="value" value="16"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9QM-rD-Dka">
+                            <rect key="frame" x="0.0" y="120" width="361" height="52"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Cardholder Eamil" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H6c-yy-SeC" customClass="PaddingTextField" customModule="Speedo_Transfer" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="180" width="361" height="52"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="52" id="f0O-Wa-Ocb"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                    <real key="value" value="16"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1z-Hr-Zv6">
+                            <rect key="frame" x="0.0" y="240" width="361" height="52"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k12-Ew-HZl" customClass="PaddingTextField" customModule="Speedo_Transfer" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="300" width="361" height="52"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="52" id="k4N-Tt-HsH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                    <real key="value" value="16"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Of Brith" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfE-cG-iwN">
+                            <rect key="frame" x="0.0" y="360" width="361" height="52"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date Of Brith" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dna-lf-dJy" customClass="PaddingTextField" customModule="Speedo_Transfer" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="420" width="361" height="52"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="52" id="bvK-2G-bq6"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                    <real key="value" value="16"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXX-rc-q3A">
+                    <rect key="frame" x="16" y="577" width="361" height="51"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="51" id="Cc7-k3-xTF"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Save">
+                        <color key="baseBackgroundColor" red="0.52941176469999995" green="0.1176470588" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </buttonConfiguration>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="Background1"/>
+            <constraints>
+                <constraint firstItem="gXX-rc-q3A" firstAttribute="leading" secondItem="mNX-Hd-Rl3" secondAttribute="leading" id="36p-KA-R7I"/>
+                <constraint firstItem="gXX-rc-q3A" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="7hw-mt-SPb"/>
+                <constraint firstItem="mNX-Hd-Rl3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="23" id="GQS-Jc-f1F"/>
+                <constraint firstAttribute="trailing" secondItem="gXX-rc-q3A" secondAttribute="trailing" constant="16" id="Gol-0g-skA"/>
+                <constraint firstItem="gXX-rc-q3A" firstAttribute="top" secondItem="mNX-Hd-Rl3" secondAttribute="bottom" constant="23" id="ItB-RP-MBj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mNX-Hd-Rl3" secondAttribute="trailing" constant="16" id="MSY-Tr-oYL"/>
+                <constraint firstItem="mNX-Hd-Rl3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="RRJ-jQ-hRB"/>
+                <constraint firstItem="gXX-rc-q3A" firstAttribute="trailing" secondItem="mNX-Hd-Rl3" secondAttribute="trailing" id="h4P-Qn-upt"/>
+            </constraints>
+            <point key="canvasLocation" x="32" y="21"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="H6c-yy-SeC">
+            <size key="intrinsicContentSize" width="192.33333333333334" height="34"/>
+        </designable>
+        <designable name="dna-lf-dJy">
+            <size key="intrinsicContentSize" width="128" height="34"/>
+        </designable>
+        <designable name="k12-Ew-HZl">
+            <size key="intrinsicContentSize" width="95.666666666666671" height="34"/>
+        </designable>
+        <designable name="vrT-Li-2of">
+            <size key="intrinsicContentSize" width="195.33333333333334" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="Background1">
+            <color red="1" green="0.97254901960784312" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

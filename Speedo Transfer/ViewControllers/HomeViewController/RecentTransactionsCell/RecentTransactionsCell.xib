@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="162" id="KGk-i7-Jjw" customClass="RecentTransactionsCell" customModule="Speedo_Transfer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="431" height="162"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="431" height="162"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7xO-2d-8KL">
+                        <rect key="frame" x="0.0" y="8" width="431" height="140"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="26W-XS-KKI">
+                                <rect key="frame" x="8" y="8" width="415" height="124"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group image" translatesAutoresizingMaskIntoConstraints="NO" id="KuL-9X-QGR">
+                                        <rect key="frame" x="0.0" y="0.0" width="216" height="124"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="KuL-9X-QGR" secondAttribute="height" multiplier="54:31" id="K3E-JP-27E"/>
+                                            <constraint firstAttribute="height" constant="61" id="vuI-3X-5IN"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="r2T-Yw-1LK">
+                                        <rect key="frame" x="226" y="0.0" width="189" height="124"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="Is6-2a-M0G">
+                                                <rect key="frame" x="0.0" y="0.0" width="189" height="20.333333333333332"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Ahmed Mohamed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xoC-le-qSh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="118.66666666666667" height="20.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZu-2D-fIK">
+                                                        <rect key="frame" x="137.66666666666669" y="0.0" width="51.333333333333343" height="20.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                        <color key="textColor" name="Primary"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visa . Mater Card . 1234" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ad7-sI-pdJ">
+                                                <rect key="frame" x="0.0" y="30.333333333333332" width="189" height="63.333333333333343"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today 11:00 - Received" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKZ-a9-8mP">
+                                                <rect key="frame" x="0.0" y="103.66666666666667" width="189" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Ad7-sI-pdJ" firstAttribute="centerY" secondItem="KuL-9X-QGR" secondAttribute="centerY" id="Di8-j8-NWn"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="26W-XS-KKI" secondAttribute="bottom" constant="8" id="7oq-Nc-KYr"/>
+                            <constraint firstItem="26W-XS-KKI" firstAttribute="leading" secondItem="7xO-2d-8KL" secondAttribute="leading" constant="8" id="bv0-RL-nCs"/>
+                            <constraint firstAttribute="trailing" secondItem="26W-XS-KKI" secondAttribute="trailing" constant="8" id="f6R-oS-dDC"/>
+                            <constraint firstItem="26W-XS-KKI" firstAttribute="top" secondItem="7xO-2d-8KL" secondAttribute="top" constant="8" id="hAZ-cM-XiG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7xO-2d-8KL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="LM9-KU-OED"/>
+                    <constraint firstAttribute="trailing" secondItem="7xO-2d-8KL" secondAttribute="trailing" id="Zcg-Jq-KZE"/>
+                    <constraint firstItem="7xO-2d-8KL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="mDl-cy-8TL"/>
+                    <constraint firstAttribute="bottom" secondItem="7xO-2d-8KL" secondAttribute="bottom" constant="8" id="pGV-CT-NTW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="DateOfOperationLabel" destination="lKZ-a9-8mP" id="x6c-NK-yeD"/>
+                <outlet property="imagePhoto" destination="KuL-9X-QGR" id="dJI-SH-c54"/>
+                <outlet property="myCardLabel" destination="Ad7-sI-pdJ" id="JWy-i1-g9l"/>
+                <outlet property="myPriceLabel" destination="wZu-2D-fIK" id="7Pq-cc-itP"/>
+                <outlet property="userNameLabel" destination="xoC-le-qSh" id="nrD-k0-fYG"/>
+            </connections>
+            <point key="canvasLocation" x="-26.717557251908396" y="103.52112676056339"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Group image" width="122" height="124"/>
+        <namedColor name="Primary">
+            <color red="0.32156862745098042" green="0.070588235294117646" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
