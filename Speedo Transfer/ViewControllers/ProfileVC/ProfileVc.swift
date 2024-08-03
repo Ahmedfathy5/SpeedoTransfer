@@ -15,9 +15,9 @@ class ProfileVc: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        arrProfile.append(ProfileSetting(name: "Personal information", details: "Your information", image: UIImage(named: "user")!))
+        arrProfile.append(ProfileSetting(name: "Personal information", details: "Your information", image: UIImage(named: "frame")!))
         arrProfile.append(ProfileSetting(name: "Setting", details: "Change your settings", image: UIImage(named: "Setting")!))
-        arrProfile.append(ProfileSetting(name: "Payment history", details: "view your transactions", image: UIImage(named: "History 4")!))
+        arrProfile.append(ProfileSetting(name: "Payment history", details: "view your transactions", image: UIImage(named: "History 5")!))
         arrProfile.append(ProfileSetting(name: "My Favourite list", details: "view your favourites", image: UIImage(named: "Vector 1")!))
         
         ProfileTableView.delegate = self

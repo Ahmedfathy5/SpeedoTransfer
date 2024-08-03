@@ -19,10 +19,10 @@ class FavouriteScreenVC: UIViewController {
         //
         favTableView.delegate = self
         favTableView.dataSource = self
-        arrFav.append(FavouriteList(image: UIImage(named: "Group 2")!, userName: "Ihab Saad", account: "Account xxxx7890"))
-        arrFav.append(FavouriteList(image: UIImage(named: "Group 2")!, userName: "Ihab Saad", account: "Account xxxx7890"))
-        arrFav.append(FavouriteList(image: UIImage(named: "Group 2")!, userName: "Ihab Saad", account: "Account xxxx7890"))
-        arrFav.append(FavouriteList(image: UIImage(named: "Group 2")!, userName: "Ihab Saad", account: "Account xxxx7890"))
+        arrFav.append(FavouriteList(image: UIImage(named: "bank 1")!, userName: "Ihab Saad", account: "Account xxxx7890"))
+        arrFav.append(FavouriteList(image: UIImage(named: "bank 1")!, userName: "Ihab Saad", account: "Account xxxx7890"))
+        arrFav.append(FavouriteList(image: UIImage(named: "bank 1")!, userName: "Ihab Saad", account: "Account xxxx7890"))
+        arrFav.append(FavouriteList(image: UIImage(named: "bank 1")!, userName: "Ihab Saad", account: "Account xxxx7890"))
         
         favTableView.register(UINib(nibName: String(describing: FavouriteTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: FavouriteTableViewCell.self))
     }
