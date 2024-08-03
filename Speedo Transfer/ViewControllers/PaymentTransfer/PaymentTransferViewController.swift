@@ -15,7 +15,6 @@ class PaymentTransferViewController: UIViewController {
     
     @IBOutlet weak var rect3: UIView!
     
-    
     @IBOutlet weak var backToHomeBtn: UIButton!
     
     @IBOutlet weak var lbl1: UILabel!

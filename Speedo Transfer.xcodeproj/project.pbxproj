@@ -16,8 +16,6 @@
 		009C7A912C5A275000CC4D33 /* TabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009C7A902C5A275000CC4D33 /* TabbarVC.swift */; };
 		009C7A9C2C5A291700CC4D33 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009C7A9A2C5A291700CC4D33 /* TransactionsViewController.swift */; };
 		009C7A9D2C5A291700CC4D33 /* TransactionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009C7A9B2C5A291700CC4D33 /* TransactionsViewController.xib */; };
-		009C7AA02C5A292A00CC4D33 /* MyCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009C7A9E2C5A292A00CC4D33 /* MyCardsViewController.swift */; };
-		009C7AA12C5A292A00CC4D33 /* MyCardsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009C7A9F2C5A292A00CC4D33 /* MyCardsViewController.xib */; };
 		00EB5EF72C5D067400D415B8 /* More.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EB5EF22C5D067400D415B8 /* More.swift */; };
 		00EB5EF82C5D067400D415B8 /* RecentTransactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EB5EF32C5D067400D415B8 /* RecentTransactions.swift */; };
 		00EB5EF92C5D067400D415B8 /* ProfileSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EB5EF42C5D067400D415B8 /* ProfileSetting.swift */; };
@@ -58,6 +56,14 @@
 		00EB5F4D2C5D4E2100D415B8 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EB5F4C2C5D4E2100D415B8 /* Transaction.swift */; };
 		00EB5F512C5D52FD00D415B8 /* SuccessfulTransactionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00EB5F502C5D52FD00D415B8 /* SuccessfulTransactionViewController.xib */; };
 		00EB5F522C5D52FD00D415B8 /* SuccessfulTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EB5F4F2C5D52FD00D415B8 /* SuccessfulTransactionViewController.swift */; };
+		00F3C3F72C5E48BA00EDCE6F /* ConnectingCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F3C3EB2C5E48BA00EDCE6F /* ConnectingCardVC.swift */; };
+		00F3C3F82C5E48BA00EDCE6F /* ConnectingCardVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00F3C3EC2C5E48BA00EDCE6F /* ConnectingCardVC.xib */; };
+		00F3C3F92C5E48BA00EDCE6F /* OtpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F3C3EE2C5E48BA00EDCE6F /* OtpViewController.swift */; };
+		00F3C3FA2C5E48BA00EDCE6F /* OtpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00F3C3EF2C5E48BA00EDCE6F /* OtpViewController.xib */; };
+		00F3C3FB2C5E48BA00EDCE6F /* AddCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F3C3F12C5E48BA00EDCE6F /* AddCardVC.swift */; };
+		00F3C3FC2C5E48BA00EDCE6F /* AddCardVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00F3C3F22C5E48BA00EDCE6F /* AddCardVC.xib */; };
+		00F3C3FD2C5E48BA00EDCE6F /* SuccessfullyAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F3C3F42C5E48BA00EDCE6F /* SuccessfullyAccountVC.swift */; };
+		00F3C3FE2C5E48BA00EDCE6F /* SuccessfullyAccountVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00F3C3F52C5E48BA00EDCE6F /* SuccessfullyAccountVC.xib */; };
 		00FE64152C5A72F8001D483B /* TransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FE64132C5A72F8001D483B /* TransferViewController.swift */; };
 		00FE64162C5A72F8001D483B /* TransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00FE64142C5A72F8001D483B /* TransferViewController.xib */; };
 		518F977A2C59A85100203B74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518F97792C59A85100203B74 /* AppDelegate.swift */; };
@@ -118,8 +124,6 @@
 		009C7A902C5A275000CC4D33 /* TabbarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarVC.swift; sourceTree = "<group>"; };
 		009C7A9A2C5A291700CC4D33 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
 		009C7A9B2C5A291700CC4D33 /* TransactionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionsViewController.xib; sourceTree = "<group>"; };
-		009C7A9E2C5A292A00CC4D33 /* MyCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCardsViewController.swift; sourceTree = "<group>"; };
-		009C7A9F2C5A292A00CC4D33 /* MyCardsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCardsViewController.xib; sourceTree = "<group>"; };
 		00EB5EF22C5D067400D415B8 /* More.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = More.swift; sourceTree = "<group>"; };
 		00EB5EF32C5D067400D415B8 /* RecentTransactions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentTransactions.swift; sourceTree = "<group>"; };
 		00EB5EF42C5D067400D415B8 /* ProfileSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileSetting.swift; sourceTree = "<group>"; };
@@ -160,6 +164,14 @@
 		00EB5F4C2C5D4E2100D415B8 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		00EB5F4F2C5D52FD00D415B8 /* SuccessfulTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessfulTransactionViewController.swift; sourceTree = "<group>"; };
 		00EB5F502C5D52FD00D415B8 /* SuccessfulTransactionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuccessfulTransactionViewController.xib; sourceTree = "<group>"; };
+		00F3C3EB2C5E48BA00EDCE6F /* ConnectingCardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectingCardVC.swift; sourceTree = "<group>"; };
+		00F3C3EC2C5E48BA00EDCE6F /* ConnectingCardVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConnectingCardVC.xib; sourceTree = "<group>"; };
+		00F3C3EE2C5E48BA00EDCE6F /* OtpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtpViewController.swift; sourceTree = "<group>"; };
+		00F3C3EF2C5E48BA00EDCE6F /* OtpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtpViewController.xib; sourceTree = "<group>"; };
+		00F3C3F12C5E48BA00EDCE6F /* AddCardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCardVC.swift; sourceTree = "<group>"; };
+		00F3C3F22C5E48BA00EDCE6F /* AddCardVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddCardVC.xib; sourceTree = "<group>"; };
+		00F3C3F42C5E48BA00EDCE6F /* SuccessfullyAccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuccessfullyAccountVC.swift; sourceTree = "<group>"; };
+		00F3C3F52C5E48BA00EDCE6F /* SuccessfullyAccountVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SuccessfullyAccountVC.xib; sourceTree = "<group>"; };
 		00FE64132C5A72F8001D483B /* TransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
 		00FE64142C5A72F8001D483B /* TransferViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferViewController.xib; sourceTree = "<group>"; };
 		518F97762C59A85100203B74 /* Speedo Transfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Speedo Transfer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -257,12 +269,19 @@
 			path = PaymentTransfer;
 			sourceTree = "<group>";
 		};
+		0065551A2C5D979800E9FEBC /* SuccessfulTransactionVC */ = {
+			isa = PBXGroup;
+			children = (
+				00EB5F4F2C5D52FD00D415B8 /* SuccessfulTransactionViewController.swift */,
+				00EB5F502C5D52FD00D415B8 /* SuccessfulTransactionViewController.xib */,
+			);
+			path = SuccessfulTransactionVC;
+			sourceTree = "<group>";
+		};
 		009C7A8F2C5A270800CC4D33 /* MainTabbarVC */ = {
 			isa = PBXGroup;
 			children = (
 				009C7A902C5A275000CC4D33 /* TabbarVC.swift */,
-				009C7A9E2C5A292A00CC4D33 /* MyCardsViewController.swift */,
-				009C7A9F2C5A292A00CC4D33 /* MyCardsViewController.xib */,
 			);
 			path = MainTabbarVC;
 			sourceTree = "<group>";
@@ -424,10 +443,44 @@
 				009C7A9B2C5A291700CC4D33 /* TransactionsViewController.xib */,
 				00EB5F482C5D3E8300D415B8 /* TransactionViewCell.swift */,
 				00EB5F492C5D3E8300D415B8 /* TransactionViewCell.xib */,
-				00EB5F4F2C5D52FD00D415B8 /* SuccessfulTransactionViewController.swift */,
-				00EB5F502C5D52FD00D415B8 /* SuccessfulTransactionViewController.xib */,
 			);
 			path = TransactionViewController;
+			sourceTree = "<group>";
+		};
+		00F3C3ED2C5E48BA00EDCE6F /* ConnectingCardVC */ = {
+			isa = PBXGroup;
+			children = (
+				00F3C3EB2C5E48BA00EDCE6F /* ConnectingCardVC.swift */,
+				00F3C3EC2C5E48BA00EDCE6F /* ConnectingCardVC.xib */,
+			);
+			path = ConnectingCardVC;
+			sourceTree = "<group>";
+		};
+		00F3C3F02C5E48BA00EDCE6F /* OtpViewController */ = {
+			isa = PBXGroup;
+			children = (
+				00F3C3EE2C5E48BA00EDCE6F /* OtpViewController.swift */,
+				00F3C3EF2C5E48BA00EDCE6F /* OtpViewController.xib */,
+			);
+			path = OtpViewController;
+			sourceTree = "<group>";
+		};
+		00F3C3F32C5E48BA00EDCE6F /* AddCardVC */ = {
+			isa = PBXGroup;
+			children = (
+				00F3C3F12C5E48BA00EDCE6F /* AddCardVC.swift */,
+				00F3C3F22C5E48BA00EDCE6F /* AddCardVC.xib */,
+			);
+			path = AddCardVC;
+			sourceTree = "<group>";
+		};
+		00F3C3F62C5E48BA00EDCE6F /* SuccessfullyAccountVC */ = {
+			isa = PBXGroup;
+			children = (
+				00F3C3F42C5E48BA00EDCE6F /* SuccessfullyAccountVC.swift */,
+				00F3C3F52C5E48BA00EDCE6F /* SuccessfullyAccountVC.xib */,
+			);
+			path = SuccessfullyAccountVC;
 			sourceTree = "<group>";
 		};
 		518F976D2C59A85100203B74 = {
@@ -532,8 +585,13 @@
 				518F98022C59B32800203B74 /* CountrySelectionVC */,
 				00EB5F022C5D088C00D415B8 /* HomeViewController */,
 				00EB5F472C5D09AB00D415B8 /* TransferViewController */,
+				00F3C3F32C5E48BA00EDCE6F /* AddCardVC */,
+				00F3C3ED2C5E48BA00EDCE6F /* ConnectingCardVC */,
+				00F3C3F02C5E48BA00EDCE6F /* OtpViewController */,
+				00F3C3F62C5E48BA00EDCE6F /* SuccessfullyAccountVC */,
 				00EB5F0D2C5D08E200D415B8 /* MoreViewController */,
 				00EB5F4E2C5D527600D415B8 /* TransactionViewController */,
+				0065551A2C5D979800E9FEBC /* SuccessfulTransactionVC */,
 				00EB5F172C5D096400D415B8 /* FavouriteSceenVC */,
 				002E42692C5C335500BF2B5C /* FavoriteList */,
 				00EB5F1E2C5D097300D415B8 /* EditFavouriteVC */,
@@ -757,6 +815,7 @@
 				00EB5F1B2C5D096400D415B8 /* FavouriteTableViewCell.xib in Resources */,
 				518F97F52C59A9C900203B74 /* SplashScreenVC.xib in Resources */,
 				00EB5F442C5D099D00D415B8 /* SettingVC.xib in Resources */,
+				00F3C3F82C5E48BA00EDCE6F /* ConnectingCardVC.xib in Resources */,
 				00EB5F042C5D088C00D415B8 /* RecentTransactionsCell.xib in Resources */,
 				518F97E22C59A90E00203B74 /* Colors.xcassets in Resources */,
 				518F98062C59B34900203B74 /* CountrySelectionVC.xib in Resources */,
@@ -764,15 +823,17 @@
 				002E42722C5C384900BF2B5C /* ConfirmationTransferViewController.xib in Resources */,
 				009C7A9D2C5A291700CC4D33 /* TransactionsViewController.xib in Resources */,
 				00EB5F0F2C5D08E200D415B8 /* MoreViewCell.xib in Resources */,
-				009C7AA12C5A292A00CC4D33 /* MyCardsViewController.xib in Resources */,
+				00F3C3FA2C5E48BA00EDCE6F /* OtpViewController.xib in Resources */,
 				00EB5F3E2C5D099D00D415B8 /* HelpVc.xib in Resources */,
 				00EB5F192C5D096400D415B8 /* FavouriteScreenVC.xib in Resources */,
+				00F3C3FC2C5E48BA00EDCE6F /* AddCardVC.xib in Resources */,
 				00EB5F382C5D099D00D415B8 /* ProfileTableViewCell.xib in Resources */,
 				00EB5F462C5D099D00D415B8 /* EditProfileVc.xib in Resources */,
 				00EB5F202C5D097300D415B8 /* EditFavouriteVC.xib in Resources */,
 				518F97E12C59A90E00203B74 /* Assets.xcassets in Resources */,
 				00EB5F402C5D099D00D415B8 /* ChangePasswordVC.xib in Resources */,
 				518F97E52C59A90E00203B74 /* Inter-Medium.ttf in Resources */,
+				00F3C3FE2C5E48BA00EDCE6F /* SuccessfullyAccountVC.xib in Resources */,
 				00EB5F4A2C5D3E8300D415B8 /* TransactionViewCell.xib in Resources */,
 				518F97E42C59A90E00203B74 /* Inter-Light.ttf in Resources */,
 				518F97FA2C59AAE800203B74 /* SignUpVc.xib in Resources */,
@@ -812,6 +873,7 @@
 				00EB5F432C5D099D00D415B8 /* SettingVC.swift in Sources */,
 				00EB5F1A2C5D096400D415B8 /* FavouriteTableViewCell.swift in Sources */,
 				518F97F92C59AAE800203B74 /* SignUpVc.swift in Sources */,
+				00F3C3FD2C5E48BA00EDCE6F /* SuccessfullyAccountVC.swift in Sources */,
 				00EB5F522C5D52FD00D415B8 /* SuccessfulTransactionViewController.swift in Sources */,
 				00EB5F0E2C5D08E200D415B8 /* MoreViewCell.swift in Sources */,
 				00EB5F052C5D088C00D415B8 /* HomeViewController.swift in Sources */,
@@ -827,12 +889,13 @@
 				518F97D22C59A8E000203B74 /* CardView.swift in Sources */,
 				518F97CF2C59A8E000203B74 /* RootRouter.swift in Sources */,
 				00EB5EF82C5D067400D415B8 /* RecentTransactions.swift in Sources */,
+				00F3C3F92C5E48BA00EDCE6F /* OtpViewController.swift in Sources */,
 				518F97842C59A85100203B74 /* Speedo_Transfer.xcdatamodeld in Sources */,
+				00F3C3F72C5E48BA00EDCE6F /* ConnectingCardVC.swift in Sources */,
 				518F97F42C59A9C900203B74 /* SplashScreenVC.swift in Sources */,
 				009C7A912C5A275000CC4D33 /* TabbarVC.swift in Sources */,
 				518F97D02C59A8E000203B74 /* String.swift in Sources */,
 				00EB5EF72C5D067400D415B8 /* More.swift in Sources */,
-				009C7AA02C5A292A00CC4D33 /* MyCardsViewController.swift in Sources */,
 				518F97D42C59A8E000203B74 /* PaddingTextField.swift in Sources */,
 				00EB5F372C5D099D00D415B8 /* ProfileTableViewCell.swift in Sources */,
 				518F977A2C59A85100203B74 /* AppDelegate.swift in Sources */,
@@ -844,6 +907,7 @@
 				518F977C2C59A85100203B74 /* SceneDelegate.swift in Sources */,
 				00EB5F4B2C5D3E8300D415B8 /* TransactionViewCell.swift in Sources */,
 				00EB5EF92C5D067400D415B8 /* ProfileSetting.swift in Sources */,
+				00F3C3FB2C5E48BA00EDCE6F /* AddCardVC.swift in Sources */,
 				00EB5F182C5D096400D415B8 /* FavouriteScreenVC.swift in Sources */,
 				518F97D32C59A8E000203B74 /* UiViewController.swift in Sources */,
 				518F980C2C59BCEF00203B74 /* CountryTableViewCell.swift in Sources */,
