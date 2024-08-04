@@ -18,21 +18,14 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="moc-c1-Mdq">
-                    <rect key="frame" x="321" y="60" width="56" height="34"/>
-                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" title="Cancel">
-                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </state>
-                </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign on your Speedo Transfer  Account" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wV2-SV-GBo">
-                    <rect key="frame" x="32" y="126.00000000000001" width="329" height="45.666666666666671"/>
+                    <rect key="frame" x="32" y="119.00000000000001" width="329" height="45.666666666666671"/>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
                     <color key="textColor" red="0.14117647058823529" green="0.13333333333333333" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="KG1-yG-j3R">
-                    <rect key="frame" x="16" y="192.66666666666663" width="361" height="255"/>
+                    <rect key="frame" x="16" y="185.66666666666663" width="361" height="255"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wx6-sn-bn0">
                             <rect key="frame" x="0.0" y="0.0" width="361" height="164.66666666666666"/>
@@ -133,7 +126,7 @@
                     </subviews>
                 </stackView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmJ-Zt-6Kh">
-                    <rect key="frame" x="16" y="479.66666666666669" width="361" height="50.000000000000057"/>
+                    <rect key="frame" x="16" y="472.66666666666669" width="361" height="50.000000000000057"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="bEx-cp-Iok"/>
                     </constraints>
@@ -149,8 +142,6 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="moc-c1-Mdq" secondAttribute="trailing" constant="16" id="0xL-PM-utJ"/>
-                <constraint firstItem="wV2-SV-GBo" firstAttribute="top" secondItem="moc-c1-Mdq" secondAttribute="bottom" constant="32" id="2BT-J0-GUU"/>
                 <constraint firstItem="KG1-yG-j3R" firstAttribute="top" secondItem="wV2-SV-GBo" secondAttribute="bottom" constant="21" id="7eS-v9-MLe"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wV2-SV-GBo" secondAttribute="trailing" constant="32" id="8rB-Kg-cMJ"/>
                 <constraint firstItem="wV2-SV-GBo" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Ndy-Ij-qN1"/>
@@ -158,27 +149,26 @@
                 <constraint firstItem="nmJ-Zt-6Kh" firstAttribute="trailing" secondItem="KG1-yG-j3R" secondAttribute="trailing" id="TWE-iU-yDd"/>
                 <constraint firstItem="nmJ-Zt-6Kh" firstAttribute="top" secondItem="KG1-yG-j3R" secondAttribute="bottom" constant="32" id="XV4-CM-zY8"/>
                 <constraint firstItem="KG1-yG-j3R" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="dD3-BE-acP"/>
+                <constraint firstItem="wV2-SV-GBo" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="gwy-Zt-xfz"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KG1-yG-j3R" secondAttribute="trailing" constant="16" id="nJm-4y-y9w"/>
                 <constraint firstItem="nmJ-Zt-6Kh" firstAttribute="leading" secondItem="KG1-yG-j3R" secondAttribute="leading" id="r0s-Uy-kU2"/>
                 <constraint firstItem="nmJ-Zt-6Kh" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="s6F-5b-ulf"/>
-                <constraint firstItem="moc-c1-Mdq" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.142494" id="sG3-Hw-8US"/>
-                <constraint firstItem="moc-c1-Mdq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="tpx-RR-olZ"/>
             </constraints>
             <point key="canvasLocation" x="81.679389312977094" y="20.422535211267608"/>
         </view>
     </objects>
     <designables>
         <designable name="M8q-GM-Im0">
-            <size key="intrinsicContentSize" width="181.33333333333334" height="34"/>
+            <size key="intrinsicContentSize" width="195.33333333333334" height="34"/>
         </designable>
         <designable name="aik-1s-Iqe">
-            <size key="intrinsicContentSize" width="76.666666666666671" height="34"/>
+            <size key="intrinsicContentSize" width="90.666666666666671" height="34"/>
         </designable>
         <designable name="cMv-sp-Dzu">
-            <size key="intrinsicContentSize" width="58.666666666666664" height="34"/>
+            <size key="intrinsicContentSize" width="72.666666666666671" height="34"/>
         </designable>
         <designable name="xxI-h9-8We">
-            <size key="intrinsicContentSize" width="85.666666666666671" height="34"/>
+            <size key="intrinsicContentSize" width="99.666666666666671" height="34"/>
         </designable>
     </designables>
     <resources>

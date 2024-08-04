@@ -15,8 +15,25 @@ class FavouriteScreenVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setUpNavigationController()
+        setUpTableView()
+        
+    }
+    
+    
+    private func setUpNavigationController() {
         navigationItem.title = "Favourite"
-        //
+        
+        let backButtonImage = UIImage(named: "Vector 3")
+        let backButton = UIButton(type: .custom)
+        backButton.setImage(backButtonImage, for: .normal)
+        backButton.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+        backButton.addTarget(self, action: #selector(backButtonTapped), for: .touchUpInside)
+        let backBarButtonItem = UIBarButtonItem(customView: backButton)
+        self.navigationItem.leftBarButtonItem = backBarButtonItem
+        
+    }
+    private func setUpTableView() {
         favTableView.delegate = self
         favTableView.dataSource = self
         arrFav.append(FavouriteList(image: UIImage(named: "bank 1")!, userName: "Ihab Saad", account: "Account xxxx7890"))
@@ -26,42 +43,50 @@ class FavouriteScreenVC: UIViewController {
         
         favTableView.register(UINib(nibName: String(describing: FavouriteTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: FavouriteTableViewCell.self))
     }
-}
-    extension FavouriteScreenVC: UITableViewDelegate, UITableViewDataSource {
-        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-           arrFav.count
+    @objc func backButtonTapped() {
+        if let tabBarController = self.tabBarController {
+            tabBarController.selectedIndex = 2
+            self.navigationController?.popViewController(animated: true)
         }
+        self.navigationController?.popViewController(animated: true)
+    }
     
-       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+}
+extension FavouriteScreenVC: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        arrFav.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: FavouriteTableViewCell.self), for: indexPath) as! FavouriteTableViewCell
-   
+        
         let model = arrFav[indexPath.row]
         cell.setData(image: model.image, username: model.userName, account: model.account)
-
-         cell.buttonEdit.tag = indexPath.row
-          cell.buttonEdit.addTarget(self, action: #selector(buttonTappedGoToEditFav), for: .touchUpInside)
-       cell.buttonRemove.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
-         return cell
+        
+        cell.buttonEdit.tag = indexPath.row
+        cell.buttonEdit.addTarget(self, action: #selector(buttonTappedGoToEditFav), for: .touchUpInside)
+        cell.buttonRemove.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        return cell
     }
     
-      func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-               return  95
-       }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return  95
     }
-    extension FavouriteScreenVC{
-       @objc func buttonTappedGoToEditFav(){
-           let EditFavouriteVC = EditFavouriteVC()
-           present(EditFavouriteVC, animated: true)
-       }
-       @objc func buttonTapped(_ sender: UIButton) {
-               let indexPath = IndexPath(row: sender.tag, section: 0)
-              let alert = UIAlertController(title: "Delete", message: "Are you sure you want to delete ?", preferredStyle: .alert)
-               alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-               alert.addAction(UIAlertAction(title: "OK", style: .destructive, handler: { _ in
-                   self.arrFav.remove(at: indexPath.row)
-                   self.favTableView.reloadData()
-             }))
-                present(alert, animated: true, completion: nil)
-            }
-
+}
+extension FavouriteScreenVC{
+    @objc func buttonTappedGoToEditFav(){
+        let EditFavouriteVC = EditFavouriteVC()
+        present(EditFavouriteVC, animated: true)
+    }
+    @objc func buttonTapped(_ sender: UIButton) {
+        let indexPath = IndexPath(row: sender.tag, section: 0)
+        let alert = UIAlertController(title: "Delete", message: "Are you sure you want to delete ?", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "OK", style: .destructive, handler: { _ in
+            self.arrFav.remove(at: indexPath.row)
+            self.favTableView.reloadData()
+        }))
+        present(alert, animated: true, completion: nil)
+    }
+    
 }

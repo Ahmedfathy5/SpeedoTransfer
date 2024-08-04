@@ -16,6 +16,12 @@ class SuccessfullyAccountVC: UIViewController {
     }
 
 
+    @IBAction func backToHome(_ sender: UIButton) {
+        let vc = MainTabbarVC()
+        let nav = UINavigationController(rootViewController: vc)
+        RootRouter.presentRoot(root: nav)
+        
+    }
     
 
 }

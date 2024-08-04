@@ -25,6 +25,8 @@ class TransferViewController: UIViewController {
     @IBOutlet weak var currencyView: UIView!
     
     @IBOutlet weak var transferView: UIView!
+    
+    
     @IBOutlet weak var textFieldUSD: UITextField!
     
     @IBOutlet weak var textFieldEGP: UITextField!
@@ -32,11 +34,16 @@ class TransferViewController: UIViewController {
     @IBOutlet weak var continueBtn: UIButton!
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        title = "Transfer"
+        
+        navigationItem.title = "Transfer"
+        
+        setUpUI()
+        
+    }
+    
+    private func setUpUI() {
         view.backgroundColor = UIColor(named: "Background")
         
         rect1.layer.cornerRadius = 17
@@ -66,16 +73,25 @@ class TransferViewController: UIViewController {
         
         transferView.layer.cornerRadius = 15
         continueBtn.layer.cornerRadius = 6
-       
         
-
-
+        
+        
+        textFieldUSD.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
     }
     
+    @objc func textFieldDidChange(_ textField: UITextField) {
+        let conversionRate: Double = 48.42
+        if let usdText = textFieldUSD.text, let usdAmount = Double(usdText) {
+            let egpAmount = usdAmount * conversionRate
+            textFieldEGP.text = String(format: "%.2f", egpAmount)
+        } else {
+            textFieldEGP.text = ""
+        }
+    }
+    
+    
     @IBAction func goToFavoriteList(_ sender: Any) {
-        let vc = FavoriteListViewController()
-        let nav = UINavigationController(rootViewController: vc)
-        RootRouter.presentRoot(root: nav)
+        
     }
     
     @IBAction func goToConfirmation(_ sender: Any) {

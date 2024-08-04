@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		002E426C2C5C337F00BF2B5C /* FavoriteListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 002E426B2C5C337F00BF2B5C /* FavoriteListViewController.xib */; };
-		002E426D2C5C337F00BF2B5C /* FavoriteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002E426A2C5C337F00BF2B5C /* FavoriteListViewController.swift */; };
-		002E42722C5C384900BF2B5C /* ConfirmationTransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 002E42712C5C384900BF2B5C /* ConfirmationTransferViewController.xib */; };
-		002E42732C5C384900BF2B5C /* ConfirmationTransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002E42702C5C384900BF2B5C /* ConfirmationTransferViewController.swift */; };
+		0014F5652C5FAC35004593AF /* ConfirmationTransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0014F5632C5FAC35004593AF /* ConfirmationTransferViewController.swift */; };
+		0014F5662C5FAC35004593AF /* ConfirmationTransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0014F5642C5FAC35004593AF /* ConfirmationTransferViewController.xib */; };
 		002E42772C5C387E00BF2B5C /* PaymentTransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 002E42762C5C387E00BF2B5C /* PaymentTransferViewController.xib */; };
 		002E42782C5C387E00BF2B5C /* PaymentTransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002E42752C5C387E00BF2B5C /* PaymentTransferViewController.swift */; };
 		009C7A912C5A275000CC4D33 /* TabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009C7A902C5A275000CC4D33 /* TabbarVC.swift */; };
@@ -115,10 +113,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		002E426A2C5C337F00BF2B5C /* FavoriteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteListViewController.swift; sourceTree = "<group>"; };
-		002E426B2C5C337F00BF2B5C /* FavoriteListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteListViewController.xib; sourceTree = "<group>"; };
-		002E42702C5C384900BF2B5C /* ConfirmationTransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationTransferViewController.swift; sourceTree = "<group>"; };
-		002E42712C5C384900BF2B5C /* ConfirmationTransferViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmationTransferViewController.xib; sourceTree = "<group>"; };
+		0014F5632C5FAC35004593AF /* ConfirmationTransferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationTransferViewController.swift; sourceTree = "<group>"; };
+		0014F5642C5FAC35004593AF /* ConfirmationTransferViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfirmationTransferViewController.xib; sourceTree = "<group>"; };
 		002E42752C5C387E00BF2B5C /* PaymentTransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentTransferViewController.swift; sourceTree = "<group>"; };
 		002E42762C5C387E00BF2B5C /* PaymentTransferViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentTransferViewController.xib; sourceTree = "<group>"; };
 		009C7A902C5A275000CC4D33 /* TabbarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarVC.swift; sourceTree = "<group>"; };
@@ -234,28 +230,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		002E42692C5C335500BF2B5C /* FavoriteList */ = {
-			isa = PBXGroup;
-			children = (
-				002E426E2C5C33EC00BF2B5C /* View */,
-			);
-			path = FavoriteList;
-			sourceTree = "<group>";
-		};
-		002E426E2C5C33EC00BF2B5C /* View */ = {
-			isa = PBXGroup;
-			children = (
-				002E426A2C5C337F00BF2B5C /* FavoriteListViewController.swift */,
-				002E426B2C5C337F00BF2B5C /* FavoriteListViewController.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		002E426F2C5C381B00BF2B5C /* ConfirmationTransfer */ = {
 			isa = PBXGroup;
 			children = (
-				002E42702C5C384900BF2B5C /* ConfirmationTransferViewController.swift */,
-				002E42712C5C384900BF2B5C /* ConfirmationTransferViewController.xib */,
+				0014F5632C5FAC35004593AF /* ConfirmationTransferViewController.swift */,
+				0014F5642C5FAC35004593AF /* ConfirmationTransferViewController.xib */,
 			);
 			path = ConfirmationTransfer;
 			sourceTree = "<group>";
@@ -509,7 +488,6 @@
 				518F97C82C59A8CF00203B74 /* Extension */,
 				518F97E02C59A90E00203B74 /* Resources */,
 				518F97F02C59A9A500203B74 /* ViewControllers */,
-				009C7A8F2C5A270800CC4D33 /* MainTabbarVC */,
 				518F978A2C59A85200203B74 /* Info.plist */,
 				518F97822C59A85100203B74 /* Speedo_Transfer.xcdatamodeld */,
 			);
@@ -578,6 +556,7 @@
 		518F97F02C59A9A500203B74 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				009C7A8F2C5A270800CC4D33 /* MainTabbarVC */,
 				518F97F12C59A9AB00203B74 /* SplashScreenVC */,
 				518F97F62C59AAD400203B74 /* SignUpVc */,
 				518F97FD2C59AE1A00203B74 /* SignUpTwoVC */,
@@ -593,7 +572,6 @@
 				00EB5F4E2C5D527600D415B8 /* TransactionViewController */,
 				0065551A2C5D979800E9FEBC /* SuccessfulTransactionVC */,
 				00EB5F172C5D096400D415B8 /* FavouriteSceenVC */,
-				002E42692C5C335500BF2B5C /* FavoriteList */,
 				00EB5F1E2C5D097300D415B8 /* EditFavouriteVC */,
 				00EB5F2E2C5D099D00D415B8 /* ChangePasswordVC */,
 				00EB5F362C5D099D00D415B8 /* EditProfileVc */,
@@ -820,10 +798,10 @@
 				518F97E22C59A90E00203B74 /* Colors.xcassets in Resources */,
 				518F98062C59B34900203B74 /* CountrySelectionVC.xib in Resources */,
 				00EB5F422C5D099D00D415B8 /* SettingTableCell.xib in Resources */,
-				002E42722C5C384900BF2B5C /* ConfirmationTransferViewController.xib in Resources */,
 				009C7A9D2C5A291700CC4D33 /* TransactionsViewController.xib in Resources */,
 				00EB5F0F2C5D08E200D415B8 /* MoreViewCell.xib in Resources */,
 				00F3C3FA2C5E48BA00EDCE6F /* OtpViewController.xib in Resources */,
+				0014F5662C5FAC35004593AF /* ConfirmationTransferViewController.xib in Resources */,
 				00EB5F3E2C5D099D00D415B8 /* HelpVc.xib in Resources */,
 				00EB5F192C5D096400D415B8 /* FavouriteScreenVC.xib in Resources */,
 				00F3C3FC2C5E48BA00EDCE6F /* AddCardVC.xib in Resources */,
@@ -838,7 +816,6 @@
 				518F97E42C59A90E00203B74 /* Inter-Light.ttf in Resources */,
 				518F97FA2C59AAE800203B74 /* SignUpVc.xib in Resources */,
 				518F98012C59AE3400203B74 /* SignUpTwoVC.xib in Resources */,
-				002E426C2C5C337F00BF2B5C /* FavoriteListViewController.xib in Resources */,
 				518F97E62C59A90E00203B74 /* Inter-Regular.ttf in Resources */,
 				002E42772C5C387E00BF2B5C /* PaymentTransferViewController.xib in Resources */,
 				518F97892C59A85200203B74 /* Base in Resources */,
@@ -902,7 +879,6 @@
 				518F98182C59C7B000203B74 /* SignInVC.swift in Sources */,
 				00EB5F3F2C5D099D00D415B8 /* ChangePasswordVC.swift in Sources */,
 				00EB5EFB2C5D067400D415B8 /* Setting.swift in Sources */,
-				002E42732C5C384900BF2B5C /* ConfirmationTransferViewController.swift in Sources */,
 				009C7A9C2C5A291700CC4D33 /* TransactionsViewController.swift in Sources */,
 				518F977C2C59A85100203B74 /* SceneDelegate.swift in Sources */,
 				00EB5F4B2C5D3E8300D415B8 /* TransactionViewCell.swift in Sources */,
@@ -913,7 +889,7 @@
 				518F980C2C59BCEF00203B74 /* CountryTableViewCell.swift in Sources */,
 				518F980F2C59BFB200203B74 /* Country.swift in Sources */,
 				518F97D12C59A8E000203B74 /* TidyTextField.swift in Sources */,
-				002E426D2C5C337F00BF2B5C /* FavoriteListViewController.swift in Sources */,
+				0014F5652C5FAC35004593AF /* ConfirmationTransferViewController.swift in Sources */,
 				00EB5F412C5D099D00D415B8 /* SettingTableCell.swift in Sources */,
 				00EB5F032C5D088C00D415B8 /* RecentTransactionsCell.swift in Sources */,
 				00EB5F4D2C5D4E2100D415B8 /* Transaction.swift in Sources */,

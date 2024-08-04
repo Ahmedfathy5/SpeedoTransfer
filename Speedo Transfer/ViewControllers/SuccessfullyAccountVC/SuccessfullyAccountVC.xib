@@ -66,6 +66,9 @@
                                 <color key="baseForegroundColor" name="Primary 1"/>
                                 <color key="baseBackgroundColor" name="Background"/>
                             </buttonConfiguration>
+                            <connections>
+                                <action selector="backToHome:" destination="-1" eventType="touchUpInside" id="Jft-mv-fRg"/>
+                            </connections>
                         </button>
                     </subviews>
                 </stackView>

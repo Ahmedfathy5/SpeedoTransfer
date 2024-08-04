@@ -32,7 +32,7 @@ class PaymentTransferViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = "Transfer"
+        navigationItem.title = "Transfer"
         
         
         rect1.layer.cornerRadius = 17
@@ -60,11 +60,25 @@ class PaymentTransferViewController: UIViewController {
         
         backToHomeBtn.layer.cornerRadius = 10
         
+        
+        let backButtonImage = UIImage(named: "Vector 3") 
+        let backButton = UIButton(type: .custom)
+        backButton.setImage(backButtonImage, for: .normal)
+        backButton.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+        backButton.addTarget(self, action: #selector(backButtonTapped), for: .touchUpInside)
+
+        let backBarButtonItem = UIBarButtonItem(customView: backButton)
+        self.navigationItem.leftBarButtonItem = backBarButtonItem
+        
     }
+    @objc func backButtonTapped() {
+        navigationController?.popViewController(animated: true)
+    }
+    
 
     @IBAction func goToHome(_ sender: UIButton) {
         
-        let vc = HomeViewController()
+        let vc = MainTabbarVC()
         let nav = UINavigationController(rootViewController: vc)
         RootRouter.presentRoot(root: nav)
     }

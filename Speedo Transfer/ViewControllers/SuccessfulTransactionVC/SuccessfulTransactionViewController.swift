@@ -16,17 +16,32 @@ class SuccessfulTransactionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        title = "Successful Transactions"
         
-        
+        setUpNavigationView()
+        setUpUI()
+    }
+    
+    private func setUpUI() {
         fromView.layer.cornerRadius = 15
         toView.layer.cornerRadius = 15
         transferAmountView.layer.cornerRadius = 15
-        // Do any additional setup after loading the view.
     }
-
-
     
-
+    private func setUpNavigationView() {
+        navigationItem.title = "Successful Transactions"
+        let backButtonImage = UIImage(named: "Vector 3")
+        let backButton = UIButton(type: .custom)
+        backButton.setImage(backButtonImage, for: .normal)
+        backButton.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+        backButton.addTarget(self, action: #selector(backButtonTapped), for: .touchUpInside)
+        
+        let backBarButtonItem = UIBarButtonItem(customView: backButton)
+        self.navigationItem.leftBarButtonItem = backBarButtonItem
+    }
+    
+    @objc func backButtonTapped() {
+        let vc = MainTabbarVC()
+        let nav = UINavigationController(rootViewController: vc)
+        RootRouter.presentRoot(root: nav)
+    }
 }
