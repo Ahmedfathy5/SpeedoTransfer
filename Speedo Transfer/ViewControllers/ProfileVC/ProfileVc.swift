@@ -9,12 +9,13 @@ import UIKit
 
 class ProfileVc: UIViewController {
     
+    @IBOutlet weak var nameOfUser: UILabel!
     @IBOutlet weak var ProfileTableView: UITableView!
-    
+    private var userDetails: UserDetails?
     var arrProfile = [ProfileSetting]()
     override func viewDidLoad() {
         super.viewDidLoad()
-
+fetchData()
         arrProfile.append(ProfileSetting(name: "Personal information", details: "Your information", image: UIImage(named: "frame")!))
         arrProfile.append(ProfileSetting(name: "Setting", details: "Change your settings", image: UIImage(named: "Setting")!))
         arrProfile.append(ProfileSetting(name: "Payment history", details: "view your transactions", image: UIImage(named: "History 5")!))
@@ -24,6 +25,24 @@ class ProfileVc: UIViewController {
         ProfileTableView.dataSource = self
         ProfileTableView.register(UINib(nibName: String(describing: ProfileTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: ProfileTableViewCell.self))
     }
+    func fetchData() {
+        NetworkManager2.ApiCaller.fetchData(baseURL: Constants.userDetailsEndPoint) { [weak self] result in
+            
+            switch result {
+            case .success(let userDetails):
+                DispatchQueue.main.async {
+                    self?.userDetails = userDetails
+                    
+                    self?.nameOfUser.text = userDetails.fullName
+                }
+              
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
+    
 }
 
 extension ProfileVc: UITableViewDelegate, UITableViewDataSource {

@@ -10,6 +10,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpVc" customModule="Speedo_Transfer" customModuleProvider="target">
             <connections>
+                <outlet property="confirmPasswordTextFields" destination="0r6-Ba-lVV" id="cxN-U4-3s0"/>
+                <outlet property="emailTextFields" destination="3a1-uG-gOR" id="kuv-3e-Dlw"/>
+                <outlet property="fullNameTextFields" destination="LCG-Oc-vto" id="zw3-gf-GDd"/>
+                <outlet property="passwordTextFields" destination="r1V-IE-lGP" id="RI0-Yc-MCE"/>
+                <outlet property="phoneTextFields" destination="Jiy-sA-cGU" id="rB7-XB-id2"/>
+                <outlet property="userNameTextFields" destination="jaF-cm-fnp" id="bfG-IK-ctz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,13 +25,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speedo Transfer " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="81A-uJ-pLo">
-                    <rect key="frame" x="107.00000000000001" y="109" width="179.33333333333337" height="28.666666666666657"/>
+                    <rect key="frame" x="107.00000000000001" y="74" width="179.33333333333337" height="28.666666666666671"/>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bH0-KZ-awg">
-                    <rect key="frame" x="16" y="202.66666666666663" width="361" height="257"/>
+                    <rect key="frame" x="16" y="117.66666666666669" width="361" height="522"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FullName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B3W-sa-RGc">
                             <rect key="frame" x="0.0" y="0.0" width="361" height="20.333333333333332"/>
@@ -34,7 +40,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LCG-Oc-vto" customClass="PaddingTextField" customModule="Speedo_Transfer" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="28.333333333333343" width="361" height="52"/>
+                            <rect key="frame" x="0.0" y="28.333333333333329" width="361" height="52"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="52" id="SKS-5a-qks"/>
                             </constraints>
@@ -47,13 +53,13 @@
                             </userDefinedRuntimeAttributes>
                         </textField>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNU-Jn-GVb">
-                            <rect key="frame" x="0.0" y="88.333333333333343" width="361" height="20.333333333333329"/>
+                            <rect key="frame" x="0.0" y="88.333333333333329" width="361" height="20.333333333333329"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3a1-uG-gOR" customClass="PaddingTextField" customModule="Speedo_Transfer" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="116.66666666666666" width="361" height="52"/>
+                            <rect key="frame" x="0.0" y="116.66666666666669" width="361" height="52"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="52" id="XL6-Ra-5bC"/>
                             </constraints>
@@ -65,14 +71,14 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </textField>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAW-DV-9vv">
-                            <rect key="frame" x="0.0" y="176.66666666666666" width="361" height="20.333333333333343"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAW-DV-9vv">
+                            <rect key="frame" x="0.0" y="176.66666666666663" width="361" height="20.333333333333343"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jiy-sA-cGU" customClass="PaddingTextField" customModule="Speedo_Transfer" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="205.00000000000003" width="361" height="51.999999999999972"/>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your phone number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jiy-sA-cGU" customClass="PaddingTextField" customModule="Speedo_Transfer" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="205" width="361" height="52"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="52" id="k8x-bG-r3u"/>
                             </constraints>
@@ -84,10 +90,67 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YqV-fN-xNJ">
+                            <rect key="frame" x="0.0" y="265" width="361" height="20.333333333333314"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jaF-cm-fnp" customClass="PaddingTextField" customModule="Speedo_Transfer" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="293.33333333333331" width="361" height="52"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="52" id="9eQ-oA-cBB"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                    <real key="value" value="16"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Vj-oN-8Y9">
+                            <rect key="frame" x="0.0" y="353.33333333333331" width="361" height="20.333333333333314"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r1V-IE-lGP" customClass="PaddingTextField" customModule="Speedo_Transfer" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="381.66666666666663" width="361" height="52"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="52" id="PfY-uy-T1N"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                    <real key="value" value="16"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zxg-HF-f2X">
+                            <rect key="frame" x="0.0" y="441.66666666666669" width="361" height="20.333333333333314"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password again" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0r6-Ba-lVV" customClass="PaddingTextField" customModule="Speedo_Transfer" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="469.99999999999994" width="361" height="52.000000000000057"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="52" id="9q0-xL-OM0"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                    <real key="value" value="16"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
                     </subviews>
                 </stackView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S7c-hz-0LQ">
-                    <rect key="frame" x="16" y="491.66666666666674" width="361" height="51"/>
+                    <rect key="frame" x="16" y="671.66666666666663" width="361" height="51"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="51" id="OYJ-ai-It6"/>
                     </constraints>
@@ -100,7 +163,7 @@
                     </connections>
                 </button>
                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dUK-MV-wi9">
-                    <rect key="frame" x="71.666666666666686" y="558.66666666666663" width="250" height="35"/>
+                    <rect key="frame" x="71.666666666666686" y="738.66666666666663" width="250" height="35"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXz-tb-cIh">
                             <rect key="frame" x="0.0" y="0.0" width="195" height="35"/>
@@ -139,24 +202,33 @@
                 <constraint firstItem="81A-uJ-pLo" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="bDH-p0-8x4"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bH0-KZ-awg" secondAttribute="trailing" constant="16" id="dRL-NF-wQT"/>
                 <constraint firstItem="dUK-MV-wi9" firstAttribute="top" secondItem="S7c-hz-0LQ" secondAttribute="bottom" constant="16" id="i18-Om-JjL"/>
-                <constraint firstItem="81A-uJ-pLo" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="l31-7T-TuP"/>
+                <constraint firstItem="81A-uJ-pLo" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="l31-7T-TuP"/>
                 <constraint firstItem="S7c-hz-0LQ" firstAttribute="trailing" secondItem="bH0-KZ-awg" secondAttribute="trailing" id="ld4-pm-ACt"/>
                 <constraint firstItem="bH0-KZ-awg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="pPk-sz-8PT"/>
                 <constraint firstItem="S7c-hz-0LQ" firstAttribute="leading" secondItem="bH0-KZ-awg" secondAttribute="leading" id="xUh-cI-vJx"/>
-                <constraint firstItem="bH0-KZ-awg" firstAttribute="top" secondItem="81A-uJ-pLo" secondAttribute="bottom" constant="65" id="z3r-gd-W8O"/>
+                <constraint firstItem="bH0-KZ-awg" firstAttribute="top" secondItem="81A-uJ-pLo" secondAttribute="bottom" constant="15" id="z3r-gd-W8O"/>
             </constraints>
             <point key="canvasLocation" x="101.5267175572519" y="19.718309859154932"/>
         </view>
     </objects>
     <designables>
+        <designable name="0r6-Ba-lVV">
+            <size key="intrinsicContentSize" width="201" height="34"/>
+        </designable>
         <designable name="3a1-uG-gOR">
-            <size key="intrinsicContentSize" width="203.66666666666666" height="34"/>
+            <size key="intrinsicContentSize" width="189.66666666666666" height="34"/>
         </designable>
         <designable name="Jiy-sA-cGU">
-            <size key="intrinsicContentSize" width="176.33333333333334" height="34"/>
+            <size key="intrinsicContentSize" width="194" height="34"/>
         </designable>
         <designable name="LCG-Oc-vto">
-            <size key="intrinsicContentSize" width="178.33333333333334" height="34"/>
+            <size key="intrinsicContentSize" width="164.33333333333334" height="34"/>
+        </designable>
+        <designable name="jaF-cm-fnp">
+            <size key="intrinsicContentSize" width="172.33333333333334" height="34"/>
+        </designable>
+        <designable name="r1V-IE-lGP">
+            <size key="intrinsicContentSize" width="162.33333333333334" height="34"/>
         </designable>
     </designables>
     <resources>

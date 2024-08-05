@@ -10,6 +10,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileInformationVC" customModule="Speedo_Transfer" customModuleProvider="target">
             <connections>
+                <outlet property="birthOfDate" destination="WTA-Hu-5yu" id="Ljz-P3-FEx"/>
+                <outlet property="nameOfUser" destination="bkv-fY-JMh" id="eZF-40-Gxg"/>
+                <outlet property="userEmail" destination="3an-Op-5IW" id="1GO-V4-u4h"/>
                 <outlet property="view" destination="3mw-Lw-cgK" id="Ipp-uG-HOa"/>
             </connections>
         </placeholder>
@@ -96,7 +99,7 @@
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VvL-kG-jEp">
                             <rect key="frame" x="0.0" y="291.66666666666669" width="361" height="57"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQ7-Bp-dgq">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQ7-Bp-dgq">
                                     <rect key="frame" x="0.0" y="0.0" width="361" height="20.333333333333332"/>
                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                     <nil key="textColor"/>
@@ -120,7 +123,7 @@
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wDa-lG-OH0">
                             <rect key="frame" x="0.0" y="388.66666666666669" width="361" height="57.333333333333314"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fg9-58-FOD">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bank Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fg9-58-FOD">
                                     <rect key="frame" x="0.0" y="0.0" width="361" height="20.333333333333332"/>
                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                     <nil key="textColor"/>

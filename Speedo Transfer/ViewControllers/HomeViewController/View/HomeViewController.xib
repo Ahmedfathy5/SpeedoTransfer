@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Speedo_Transfer" customModuleProvider="target">
             <connections>
-                <outlet property="nameOfUser" destination="fvV-fC-IDT" id="Off-LW-kRI"/>
+                <outlet property="nameOfUser" destination="fvV-fC-IDT" id="Cxe-Rd-jmr"/>
                 <outlet property="tableView" destination="wUU-fB-zK0" id="wK9-22-1Tz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -50,26 +50,26 @@
                         </stackView>
                     </subviews>
                 </stackView>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J8a-uk-v7S">
-                    <rect key="frame" x="0.0" y="122" width="393" height="730"/>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8a-uk-v7S">
+                    <rect key="frame" x="0.0" y="124" width="393" height="728"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ILj-hV-dlN">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="728"/>
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="644"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mbQ-Gy-oDe" customClass="CardView" customModule="Speedo_Transfer" customModuleProvider="target">
                                     <rect key="frame" x="16" y="15" width="361" height="123"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="J7G-a5-6sU">
-                                            <rect key="frame" x="13" y="25" width="335" height="75.333333333333329"/>
+                                            <rect key="frame" x="13" y="25" width="335" height="78"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jbl-Wx-YSQ">
-                                                    <rect key="frame" x="0.0" y="0.0" width="122.66666666666667" height="33.666666666666664"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="122.66666666666667" height="35"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$2,85,856.20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5X7-sk-X3X">
-                                                    <rect key="frame" x="0.0" y="41.666666666666657" width="172" height="33.666666666666657"/>
+                                                    <rect key="frame" x="0.0" y="43" width="172" height="35"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -83,6 +83,7 @@
                                         <constraint firstItem="J7G-a5-6sU" firstAttribute="top" secondItem="mbQ-Gy-oDe" secondAttribute="top" constant="25" id="9gH-eC-Hgz"/>
                                         <constraint firstAttribute="trailing" secondItem="J7G-a5-6sU" secondAttribute="trailing" constant="13" id="REh-Yw-T29"/>
                                         <constraint firstAttribute="height" constant="123" id="RTm-Ux-b8t"/>
+                                        <constraint firstAttribute="bottom" secondItem="J7G-a5-6sU" secondAttribute="bottom" constant="20" id="my9-jw-nl1"/>
                                     </constraints>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRdis">
@@ -270,12 +271,9 @@
                                         </button>
                                     </subviews>
                                 </stackView>
-                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" indicatorStyle="white" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wUU-fB-zK0">
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="361" placeholderIntrinsicHeight="263" alwaysBounceVertical="YES" scrollEnabled="NO" showsVerticalScrollIndicator="NO" indicatorStyle="white" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wUU-fB-zK0" customClass="SelfSizedTableView" customModule="Speedo_Transfer" customModuleProvider="target">
                                     <rect key="frame" x="16" y="361" width="361" height="263"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="263" id="qYF-9V-beh"/>
-                                    </constraints>
                                 </tableView>
                             </subviews>
                             <color key="backgroundColor" red="1" green="0.97254901960784312" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
@@ -291,20 +289,19 @@
                                 <constraint firstAttribute="trailing" secondItem="mbQ-Gy-oDe" secondAttribute="trailing" constant="16" id="edr-Ir-WhQ"/>
                                 <constraint firstItem="yJN-Xt-BuI" firstAttribute="leading" secondItem="ILj-hV-dlN" secondAttribute="leading" constant="12" id="mSj-UP-oNR"/>
                                 <constraint firstItem="8Bl-Se-Inq" firstAttribute="top" secondItem="mbQ-Gy-oDe" secondAttribute="bottom" constant="16" id="oY2-Iy-rUO"/>
+                                <constraint firstAttribute="bottom" secondItem="wUU-fB-zK0" secondAttribute="bottom" constant="20" id="qp0-S1-ucv"/>
                                 <constraint firstAttribute="trailing" secondItem="yJN-Xt-BuI" secondAttribute="trailing" constant="12" id="x8O-ok-FCW"/>
                                 <constraint firstItem="yJN-Xt-BuI" firstAttribute="centerX" secondItem="ILj-hV-dlN" secondAttribute="centerX" id="xqw-Ul-8Vq"/>
                             </constraints>
                         </view>
                     </subviews>
                     <constraints>
-                        <constraint firstItem="ILj-hV-dlN" firstAttribute="top" secondItem="ogG-ll-0NI" secondAttribute="top" id="0VB-wP-841"/>
-                        <constraint firstItem="ogG-ll-0NI" firstAttribute="trailing" secondItem="ILj-hV-dlN" secondAttribute="trailing" id="JI6-qe-nLr"/>
-                        <constraint firstItem="ILj-hV-dlN" firstAttribute="leading" secondItem="ogG-ll-0NI" secondAttribute="leading" id="V5U-3J-GH5"/>
+                        <constraint firstItem="ILj-hV-dlN" firstAttribute="top" secondItem="J8a-uk-v7S" secondAttribute="top" id="0VB-wP-841"/>
+                        <constraint firstAttribute="trailing" secondItem="ILj-hV-dlN" secondAttribute="trailing" id="JI6-qe-nLr"/>
+                        <constraint firstItem="ILj-hV-dlN" firstAttribute="leading" secondItem="J8a-uk-v7S" secondAttribute="leading" id="V5U-3J-GH5"/>
                         <constraint firstItem="ILj-hV-dlN" firstAttribute="width" secondItem="J8a-uk-v7S" secondAttribute="width" id="ffx-RV-UQH"/>
-                        <constraint firstItem="ogG-ll-0NI" firstAttribute="bottom" secondItem="ILj-hV-dlN" secondAttribute="bottom" id="ra1-DJ-i5L"/>
+                        <constraint firstAttribute="bottom" secondItem="ILj-hV-dlN" secondAttribute="bottom" id="ra1-DJ-i5L"/>
                     </constraints>
-                    <viewLayoutGuide key="contentLayoutGuide" id="FCz-K4-xZD"/>
-                    <viewLayoutGuide key="frameLayoutGuide" id="ogG-ll-0NI"/>
                 </scrollView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLi-jH-R8A">
                     <rect key="frame" x="342.66666666666669" y="74" width="34.333333333333314" height="32"/>

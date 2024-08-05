@@ -20,31 +20,11 @@ class CountrySelectionVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        arrData.append(Country(name: "united states", image: UIImage(named: "united states")!))
-        arrData.append(Country(name: "united states", image: UIImage(named: "united states")!))
-        arrData.append(Country(name: "united states", image: UIImage(named: "united states")!))
-        arrData.append(Country(name: "united states", image: UIImage(named: "united states")!))
-        arrData.append(Country(name: "united states", image: UIImage(named: "united states")!))
-        arrData.append(Country(name: "united states", image: UIImage(named: "united states")!))
-        arrData.append(Country(name: "united states", image: UIImage(named: "united states")!))
-        arrData.append(Country(name: "united states", image: UIImage(named: "united states")!))
-        arrData.append(Country(name: "united states", image: UIImage(named: "united states")!))
-        arrData.append(Country(name: "united states", image: UIImage(named: "united states")!))
-        arrData.append(Country(name: "united states", image: UIImage(named: "united states")!))
-        arrData.append(Country(name: "united states", image: UIImage(named: "united states")!))
-        arrData.append(Country(name: "united states", image: UIImage(named: "united states")!))
-        arrData.append(Country(name: "united states", image: UIImage(named: "united states")!))
-        arrData.append(Country(name: "united states", image: UIImage(named: "united states")!))
-        arrData.append(Country(name: "united states", image: UIImage(named: "united states")!))
-        arrData.append(Country(name: "united states", image: UIImage(named: "united states")!))
-        arrData.append(Country(name: "united states", image: UIImage(named: "united states")!))
-        arrData.append(Country(name: "united states", image: UIImage(named: "united states")!))
-        arrData.append(Country(name: "united states", image: UIImage(named: "united states")!))
-        arrData.append(Country(name: "united states", image: UIImage(named: "united states")!))
-        arrData.append(Country(name: "united states", image: UIImage(named: "united states")!))
-        arrData.append(Country(name: "united states", image: UIImage(named: "united states")!))
-        arrData.append(Country(name: "united states", image: UIImage(named: "united states")!))
+      
+        arrData.append(Country(name: "EG", image: UIImage(named: "united states")!))
+        arrData.append(Country(name: "UK", image: UIImage(named: "united states")!))
+        arrData.append(Country(name: "US", image: UIImage(named: "united states")!))
+     
 
         CountrysTableView.delegate = self
         CountrysTableView.dataSource = self

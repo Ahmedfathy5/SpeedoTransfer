@@ -13,6 +13,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet weak var nameOfUser: UILabel!
+    
+    
     var userDetails: UserDetails?
     var arrData = [RecentTransactions]()
     private let ApiCaller = NetworkManager2()
@@ -44,22 +46,26 @@ class HomeViewController: UIViewController {
     
     func fetchData() {
       
-        ApiCaller.fetchData { [weak self] result in
-            
-                switch result {
-                case .success(let userDetails):
-                    DispatchQueue.main.async {
-                        self?.userDetails = userDetails
-                        
-                        self?.nameOfUser.text = userDetails.fullName
+        ApiCaller.fetchData(baseURL: Constants.userDetailsEndPoint) { [weak self] result in
+                
+                    switch result {
+                    case .success(let userDetails):
+                        DispatchQueue.main.async {
+                            self?.userDetails = userDetails
+                            
+                            self?.nameOfUser.text = userDetails.fullName
+                        }
+                      
+                    case .failure(let error):
+                        print(error.localizedDescription)
                     }
-                  
-                case .failure(let error):
-                    print(error.localizedDescription)
                 }
-            }
+
         }
-    }
+        
+       
+        }
+
     
 
 

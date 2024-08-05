@@ -1,0 +1,6 @@
+framework module Pods_Speedo_Transfer_Speedo_TransferUITests {
+  umbrella header "Pods-Speedo Transfer-Speedo TransferUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

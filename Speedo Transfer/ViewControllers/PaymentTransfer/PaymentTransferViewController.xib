@@ -177,7 +177,7 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5jj-5Y-rgV">
                                     <rect key="frame" x="8" y="8" width="403.33333333333331" height="125"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bank 1" translatesAutoresizingMaskIntoConstraints="NO" id="oD1-UL-M1B">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bankWithView" translatesAutoresizingMaskIntoConstraints="NO" id="oD1-UL-M1B">
                                             <rect key="frame" x="8" y="45" width="35" height="35"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="35" id="NX7-Y7-uz9"/>
@@ -211,7 +211,7 @@
                                             </constraints>
                                         </stackView>
                                     </subviews>
-                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" name="FromColor"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="125" id="I73-bI-a8T"/>
                                         <constraint firstItem="oD1-UL-M1B" firstAttribute="leading" secondItem="5jj-5Y-rgV" secondAttribute="leading" constant="8" id="NlT-Jj-9eK"/>
@@ -224,7 +224,7 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MAf-8M-LDG">
                                     <rect key="frame" x="8" y="150" width="403.33333333333331" height="125"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bank 1" translatesAutoresizingMaskIntoConstraints="NO" id="c19-9e-hlp">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bankWithView" translatesAutoresizingMaskIntoConstraints="NO" id="c19-9e-hlp">
                                             <rect key="frame" x="8" y="45" width="35" height="35"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="35" id="Pyd-Fd-i7X"/>
@@ -258,7 +258,7 @@
                                             </constraints>
                                         </stackView>
                                     </subviews>
-                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" name="FromColor"/>
                                     <constraints>
                                         <constraint firstItem="Cfa-BO-eGs" firstAttribute="leading" secondItem="c19-9e-hlp" secondAttribute="trailing" constant="30" id="7Da-iD-eVc"/>
                                         <constraint firstAttribute="height" constant="125" id="Ax1-kZ-qbO"/>
@@ -401,10 +401,13 @@
     </objects>
     <resources>
         <image name="Check mark" width="113" height="113"/>
-        <image name="bank 1" width="24" height="24"/>
+        <image name="bankWithView" width="48" height="49"/>
         <image name="brownCheckmark" width="44" height="45"/>
         <namedColor name="Background">
             <color red="1" green="0.93333333333333335" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FromColor">
+            <color red="0.95294117647058818" green="0.9137254901960784" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Light">
             <color red="0.53725490196078429" green="0.53333333333333333" blue="0.52549019607843139" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

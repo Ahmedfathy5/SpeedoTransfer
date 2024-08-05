@@ -1,0 +1,16 @@
+PODS:
+  - RxSwift (6.7.1)
+
+DEPENDENCIES:
+  - RxSwift
+
+SPEC REPOS:
+  trunk:
+    - RxSwift
+
+SPEC CHECKSUMS:
+  RxSwift: b9a93a26031785159e11abd40d1a55bcb8057e52
+
+PODFILE CHECKSUM: de16955ec4cbd5adf4b4297ae19376a98057cd80
+
+COCOAPODS: 1.15.2

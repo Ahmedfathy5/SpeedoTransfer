@@ -5,7 +5,6 @@
 //  Created by ihab saad on 01/08/2024.
 //
 
-import Foundation
 import UIKit
 
 struct RecentTransactions {
