@@ -62,6 +62,8 @@
 		00F3C3FC2C5E48BA00EDCE6F /* AddCardVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00F3C3F22C5E48BA00EDCE6F /* AddCardVC.xib */; };
 		00F3C3FD2C5E48BA00EDCE6F /* SuccessfullyAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F3C3F42C5E48BA00EDCE6F /* SuccessfullyAccountVC.swift */; };
 		00F3C3FE2C5E48BA00EDCE6F /* SuccessfullyAccountVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00F3C3F52C5E48BA00EDCE6F /* SuccessfullyAccountVC.xib */; };
+		00F4F6C62C60C7080063DE61 /* NetworkManager2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F4F6C52C60C7080063DE61 /* NetworkManager2.swift */; };
+		00F4F6C82C60E9AB0063DE61 /* UserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F4F6C72C60E9AB0063DE61 /* UserDetails.swift */; };
 		00FE64152C5A72F8001D483B /* TransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FE64132C5A72F8001D483B /* TransferViewController.swift */; };
 		00FE64162C5A72F8001D483B /* TransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00FE64142C5A72F8001D483B /* TransferViewController.xib */; };
 		518F977A2C59A85100203B74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518F97792C59A85100203B74 /* AppDelegate.swift */; };
@@ -168,6 +170,8 @@
 		00F3C3F22C5E48BA00EDCE6F /* AddCardVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddCardVC.xib; sourceTree = "<group>"; };
 		00F3C3F42C5E48BA00EDCE6F /* SuccessfullyAccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuccessfullyAccountVC.swift; sourceTree = "<group>"; };
 		00F3C3F52C5E48BA00EDCE6F /* SuccessfullyAccountVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SuccessfullyAccountVC.xib; sourceTree = "<group>"; };
+		00F4F6C52C60C7080063DE61 /* NetworkManager2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager2.swift; sourceTree = "<group>"; };
+		00F4F6C72C60E9AB0063DE61 /* UserDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetails.swift; sourceTree = "<group>"; };
 		00FE64132C5A72F8001D483B /* TransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
 		00FE64142C5A72F8001D483B /* TransferViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferViewController.xib; sourceTree = "<group>"; };
 		518F97762C59A85100203B74 /* Speedo Transfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Speedo Transfer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -287,6 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				00EB5EFE2C5D088C00D415B8 /* RecentTransactionsCell */,
+				00F4F6E92C6109DB0063DE61 /* ViewModel */,
 				00EB5F012C5D088C00D415B8 /* View */,
 			);
 			path = HomeViewController;
@@ -462,6 +467,21 @@
 			path = SuccessfullyAccountVC;
 			sourceTree = "<group>";
 		};
+		00F4F6C42C60C6DA0063DE61 /* Nerworking2 */ = {
+			isa = PBXGroup;
+			children = (
+				00F4F6C52C60C7080063DE61 /* NetworkManager2.swift */,
+			);
+			path = Nerworking2;
+			sourceTree = "<group>";
+		};
+		00F4F6E92C6109DB0063DE61 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		518F976D2C59A85100203B74 = {
 			isa = PBXGroup;
 			children = (
@@ -484,6 +504,7 @@
 			isa = PBXGroup;
 			children = (
 				518F97AC2C59A85600203B74 /* Core */,
+				00F4F6C42C60C6DA0063DE61 /* Nerworking2 */,
 				518F980D2C59BF9300203B74 /* Model */,
 				518F97C82C59A8CF00203B74 /* Extension */,
 				518F97E02C59A90E00203B74 /* Resources */,
@@ -666,6 +687,7 @@
 				00EB5EF32C5D067400D415B8 /* RecentTransactions.swift */,
 				00EB5EF62C5D067400D415B8 /* Setting.swift */,
 				00EB5F4C2C5D4E2100D415B8 /* Transaction.swift */,
+				00F4F6C72C60E9AB0063DE61 /* UserDetails.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -874,8 +896,10 @@
 				518F97D02C59A8E000203B74 /* String.swift in Sources */,
 				00EB5EF72C5D067400D415B8 /* More.swift in Sources */,
 				518F97D42C59A8E000203B74 /* PaddingTextField.swift in Sources */,
+				00F4F6C82C60E9AB0063DE61 /* UserDetails.swift in Sources */,
 				00EB5F372C5D099D00D415B8 /* ProfileTableViewCell.swift in Sources */,
 				518F977A2C59A85100203B74 /* AppDelegate.swift in Sources */,
+				00F4F6C62C60C7080063DE61 /* NetworkManager2.swift in Sources */,
 				518F98182C59C7B000203B74 /* SignInVC.swift in Sources */,
 				00EB5F3F2C5D099D00D415B8 /* ChangePasswordVC.swift in Sources */,
 				00EB5EFB2C5D067400D415B8 /* Setting.swift in Sources */,

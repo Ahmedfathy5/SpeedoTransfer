@@ -7,13 +7,22 @@
 
 import UIKit
 
+
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var nameOfUser: UILabel!
+    var userDetails: UserDetails?
     var arrData = [RecentTransactions]()
+    private let ApiCaller = NetworkManager2()
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+      
+           fetchData()
+        
+        
         
         arrData.append(.init(userName: "ihabSaad", myCard: "Visa . Mater Card . 1234", DateOfOperation: "Today 11:00 - Received", price: "$1000", image: UIImage(named: "Group image")!))
         arrData.append(.init(userName: "ihabSaad", myCard: "Visa . Mater Card . 1234", DateOfOperation: "Today 11:00 - Received", price: "$1000", image: UIImage(named: "Group image")!))
@@ -30,7 +39,30 @@ class HomeViewController: UIViewController {
         tableView.delegate = self
         tableView.register(UINib(nibName: String(describing: RecentTransactionsCell.self), bundle: nil), forCellReuseIdentifier: String(describing: RecentTransactionsCell.self))
     }
-}
+    
+
+    
+    func fetchData() {
+      
+        ApiCaller.fetchData { [weak self] result in
+            
+                switch result {
+                case .success(let userDetails):
+                    DispatchQueue.main.async {
+                        self?.userDetails = userDetails
+                        
+                        self?.nameOfUser.text = userDetails.fullName
+                    }
+                  
+                case .failure(let error):
+                    print(error.localizedDescription)
+                }
+            }
+        }
+    }
+    
+
+
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
