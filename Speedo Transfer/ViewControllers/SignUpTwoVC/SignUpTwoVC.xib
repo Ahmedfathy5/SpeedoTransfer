@@ -9,9 +9,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpTwoVC" customModule="Speedo_Transfer" customModuleProvider="target">
             <connections>
-                <outlet property="CountryTextFields" destination="tz2-S1-7t9" id="7mx-iG-fPR"/>
-                <outlet property="dateOfBirthTextFields" destination="FZR-X8-ZiQ" id="AV0-g4-Dwn"/>
-                <outlet property="genderTextFields" destination="PFh-1c-wbT" id="yYv-SA-PY7"/>
+                <outlet property="CountryTextFields" destination="oc5-fM-LWc" id="Mpj-G4-Qg6"/>
+                <outlet property="dateOfBirthTextFields" destination="FZR-X8-ZiQ" id="TEC-B9-wN1"/>
+                <outlet property="genderTextFields" destination="05c-mj-n10" id="2cg-kp-nhO"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -46,16 +46,16 @@
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="z3R-iy-E7X">
                     <rect key="frame" x="16" y="309" width="361" height="257"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fud-Cn-spn">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHM-Dh-Aly">
                             <rect key="frame" x="0.0" y="0.0" width="361" height="20.333333333333332"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select your Gender" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PFh-1c-wbT" customClass="PaddingTextField" customModule="Speedo_Transfer" customModuleProvider="target">
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select your gender" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="05c-mj-n10" customClass="PaddingTextField" customModule="Speedo_Transfer" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="28.333333333333314" width="361" height="52"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="52" id="hzS-ko-JOb"/>
+                                <constraint firstAttribute="height" constant="52" id="yu8-aJ-Ysa"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
@@ -65,16 +65,16 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </textField>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J33-Ik-rk6">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9iw-HI-JYL">
                             <rect key="frame" x="0.0" y="88.333333333333314" width="361" height="20.333333333333329"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select your country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tz2-S1-7t9" customClass="PaddingTextField" customModule="Speedo_Transfer" customModuleProvider="target">
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select your country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oc5-fM-LWc" customClass="PaddingTextField" customModule="Speedo_Transfer" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="116.66666666666669" width="361" height="52"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="52" id="Hbw-xu-M1h"/>
+                                <constraint firstAttribute="height" constant="52" id="xWg-5S-fwR"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
@@ -115,7 +115,7 @@
                         <color key="baseBackgroundColor" name="Primary 1"/>
                     </buttonConfiguration>
                     <connections>
-                        <action selector="goToSignInnVc:" destination="-1" eventType="touchUpInside" id="i0B-ak-oB8"/>
+                        <action selector="goToSignInnVc:" destination="-1" eventType="touchUpInside" id="a5O-7K-znO"/>
                     </connections>
                 </button>
             </subviews>
@@ -138,13 +138,13 @@
         </view>
     </objects>
     <designables>
+        <designable name="05c-mj-n10">
+            <size key="intrinsicContentSize" width="153" height="34"/>
+        </designable>
         <designable name="FZR-X8-ZiQ">
             <size key="intrinsicContentSize" width="109" height="34"/>
         </designable>
-        <designable name="PFh-1c-wbT">
-            <size key="intrinsicContentSize" width="154.33333333333334" height="34"/>
-        </designable>
-        <designable name="tz2-S1-7t9">
+        <designable name="oc5-fM-LWc">
             <size key="intrinsicContentSize" width="156.33333333333334" height="34"/>
         </designable>
     </designables>

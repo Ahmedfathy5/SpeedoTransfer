@@ -10,8 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignInVC" customModule="Speedo_Transfer" customModuleProvider="target">
             <connections>
-                <outlet property="emailTextFields" destination="WM8-iN-Gpt" id="4Gj-V9-htw"/>
-                <outlet property="passwordTextFields" destination="pOL-Nr-xYm" id="bBL-ak-Twg"/>
+                <outlet property="emailTextFields" destination="WM8-iN-Gpt" id="rqX-B0-Ks4"/>
+                <outlet property="passwordTextFields" destination="pOL-Nr-xYm" id="jSa-va-euh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -26,7 +26,7 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nLG-J9-lVc">
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nLG-J9-lVc">
                     <rect key="frame" x="16" y="207.66666666666669" width="361" height="168.66666666666669"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eamil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exn-Cr-Dpx">
@@ -60,7 +60,7 @@
                                 <constraint firstAttribute="height" constant="52" id="YxM-nw-G12"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
                                     <real key="value" value="16"/>
@@ -79,7 +79,7 @@
                         <color key="baseBackgroundColor" name="Primary 1"/>
                     </buttonConfiguration>
                     <connections>
-                        <action selector="SignInBtn:" destination="-1" eventType="touchUpInside" id="j8m-nF-4V7"/>
+                        <action selector="SignInBtn:" destination="-1" eventType="touchUpInside" id="yZw-ZX-vfb"/>
                     </connections>
                 </button>
                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Od6-8c-Py4">

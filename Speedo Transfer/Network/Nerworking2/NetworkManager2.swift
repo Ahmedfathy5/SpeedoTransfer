@@ -13,7 +13,7 @@ class NetworkManager2 {
     
     static let ApiCaller = NetworkManager2()
     
-        let token = "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxQGdtYWlsLmNvbSIsImp0aSI6IjIiLCJpYXQiOjE3MjI4ODk1MDUsImV4cCI6MTcyMjg5MTMwNX0.JcWO-6jGIbDmJ5buGbejF5cEuSC4XJDxOb-BT-29p1c"
+    let token = MangerLocal.shard.getAuthToken()
         
         
         
@@ -23,8 +23,9 @@ class NetworkManager2 {
             guard let url = URL(string: baseURL) else { return }
             var request = URLRequest(url: url)
             request.httpMethod = "GET"
-            request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
-            
+            request.setValue("Bearer \(String(describing: token))", forHTTPHeaderField: "Authorization")
+//        /*request.allHTTPHeaderFields =  ["Accept": "application/json", "Content-Type": "application/json", "token": Mang*/erLocal.shard.getAuthToken() ?? "" ]
+        
             URLSession.shared.dataTask(with: request) { data, response, error in
                 if let error = error {
                     completion(.failure(error))

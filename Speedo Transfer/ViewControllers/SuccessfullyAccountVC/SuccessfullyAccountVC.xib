@@ -54,6 +54,9 @@
                             <buttonConfiguration key="configuration" style="filled" title="Connect another account">
                                 <color key="baseBackgroundColor" name="Primary 1"/>
                             </buttonConfiguration>
+                            <connections>
+                                <action selector="createAccount:" destination="-1" eventType="touchUpInside" id="Lhc-SQ-EhG"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyZ-xl-irK">
                             <rect key="frame" x="0.0" y="67" width="361" height="51"/>

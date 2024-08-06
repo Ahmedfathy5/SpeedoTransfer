@@ -5,6 +5,7 @@
 //  Created by ihab saad on 31/07/2024.
 //
 
+
 import UIKit
 import RxSwift
 
@@ -29,13 +30,32 @@ class SignInVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationController?.navigationBar.isHidden = true
         bindViewModel()
+        let backButtonImage = UIImage(named: "Vector 3")
+        let backButton = UIButton(type: .custom)
+        backButton.setImage(backButtonImage, for: .normal)
+        backButton.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+        backButton.addTarget(self, action: #selector(backButtonTapped), for: .touchUpInside)
+
+        let backBarButtonItem = UIBarButtonItem(customView: backButton)
+        self.navigationItem.leftBarButtonItem = backBarButtonItem
+    }
+
+    @objc func backButtonTapped() {
+        navigationController?.popViewController(animated: true)
     }
     
     @IBAction func SignInBtn(_ sender: UIButton) {
         let email = emailTextFields.text?.trimed ?? ""
         let password = passwordTextFields.text?.trimed ?? ""
-        viewModel.login(email: email, password: password)
+        if  viewModel.login(email: email, password: password) {
+            let mainTabbarVC = MainTabbarVC()
+            RootRouter.presentRoot(root: mainTabbarVC)
+        } else {
+            self.showAlert(message: "Error")
+        }
     }
     
     private func bindViewModel() {
@@ -49,17 +69,12 @@ class SignInVC: UIViewController {
                         // Hide loading spinner or indicator
                         break
                     case .completed:
-                        self?.presentHomeVC()
+                       print("completed")
                     case .error:
                         self?.showAlert(message: "error")
                     }
                 }).disposed(by: disposeBag)
         }
-    
-    private func presentHomeVC() {
-        let MainTabbarVC = MainTabbarVC()
-        navigationController?.pushViewController(MainTabbarVC, animated: true)
-    }
     
     private func showAlert(message: String) {
         let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)

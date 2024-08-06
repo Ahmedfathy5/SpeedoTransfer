@@ -16,6 +16,7 @@ class ProfileVc: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 fetchData()
+        setUpNavigationController()
         arrProfile.append(ProfileSetting(name: "Personal information", details: "Your information", image: UIImage(named: "frame")!))
         arrProfile.append(ProfileSetting(name: "Setting", details: "Change your settings", image: UIImage(named: "Setting")!))
         arrProfile.append(ProfileSetting(name: "Payment history", details: "view your transactions", image: UIImage(named: "History 5")!))
@@ -24,6 +25,23 @@ fetchData()
         ProfileTableView.delegate = self
         ProfileTableView.dataSource = self
         ProfileTableView.register(UINib(nibName: String(describing: ProfileTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: ProfileTableViewCell.self))
+    }
+    private func setUpNavigationController() {
+        navigationItem.title = "Profile"
+
+        
+        let backButtonImage = UIImage(named: "Vector 3")
+        let backButton = UIButton(type: .custom)
+        backButton.setImage(backButtonImage, for: .normal)
+        backButton.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+        backButton.addTarget(self, action: #selector(backButtonTapped), for: .touchUpInside)
+        let backBarButtonItem = UIBarButtonItem(customView: backButton)
+        self.navigationItem.leftBarButtonItem = backBarButtonItem
+        
+    }
+    @objc func backButtonTapped() {
+       
+        self.navigationController?.popViewController(animated: true)
     }
     func fetchData() {
         NetworkManager2.ApiCaller.fetchData(baseURL: Constants.userDetailsEndPoint) { [weak self] result in

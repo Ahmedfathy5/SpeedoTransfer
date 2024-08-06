@@ -44,10 +44,7 @@ class FavouriteScreenVC: UIViewController {
         favTableView.register(UINib(nibName: String(describing: FavouriteTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: FavouriteTableViewCell.self))
     }
     @objc func backButtonTapped() {
-        if let tabBarController = self.tabBarController {
-            tabBarController.selectedIndex = 2
-            self.navigationController?.popViewController(animated: true)
-        }
+       
         self.navigationController?.popViewController(animated: true)
     }
     

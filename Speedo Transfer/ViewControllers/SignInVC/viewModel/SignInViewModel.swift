@@ -23,7 +23,7 @@ class SignInViewModel {
     let stateLogin = PublishSubject<ScreenLoginViewModel>()
     
     // MARK: - Login User
-    func login(email: String, password: String){
+    func login(email: String, password: String) -> Bool{
         
         
         stateLogin.onNext(.showLoading)
@@ -43,5 +43,6 @@ class SignInViewModel {
             }
             
         }
+        return true
     }
 }

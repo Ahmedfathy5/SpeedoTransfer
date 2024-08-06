@@ -42,7 +42,7 @@ class TransactionsViewController: UIViewController {
         backButton.addTarget(self, action: #selector(backButtonTapped), for: .touchUpInside)
 
         let backBarButtonItem = UIBarButtonItem(customView: backButton)
-        self.navigationItem.leftBarButtonItem = backBarButtonItem
+       // self.navigationItem.leftBarButtonItem = backBarButtonItem
     }
     
     @objc func backButtonTapped() {

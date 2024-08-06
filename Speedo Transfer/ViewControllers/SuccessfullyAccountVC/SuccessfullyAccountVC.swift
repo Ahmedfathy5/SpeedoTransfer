@@ -13,6 +13,7 @@ class SuccessfullyAccountVC: UIViewController {
         super.viewDidLoad()
 
         navigationItem.title = "Bank Card OTP"
+        navigationItem.leftBarButtonItem?.tintColor = .black
     }
 
 
@@ -23,5 +24,10 @@ class SuccessfullyAccountVC: UIViewController {
         
     }
     
-
+    @IBAction func createAccount(_ sender: UIButton) {
+        
+        navigationController?.pushViewController(AddCardVC(), animated: true)
+        
+    }
+    
 }

@@ -48,7 +48,7 @@ extension MoreViewController: UITableViewDelegate, UITableViewDataSource {
                   cell.accessoryView = nil
               } else {
                   let arrowImageView = UIImageView(image: UIImage(named: "Chevron"))
-//                  arrowImageView.backgroundColor = UIColor.background1
+
                   arrowImageView.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
                   
                   cell.accessoryView = arrowImageView
@@ -63,14 +63,15 @@ extension MoreViewController: UITableViewDelegate, UITableViewDataSource {
         switch indexPath.row {
            case 1:
                let favouriteScreenVC = FavouriteScreenVC()
+//            favouriteScreenVC.modalPresentationStyle = .fullScreen
 //            present(favouriteScreenVC, animated: true)
-            let nav = UINavigationController(rootViewController: favouriteScreenVC)
-                RootRouter.presentRoot(root: nav)
+            navigationController?.pushViewController(favouriteScreenVC, animated: true)
             
         case 2 :
             let profileVc = ProfileVc()
-            let nav = UINavigationController(rootViewController: profileVc)
-            RootRouter.presentRoot(root: nav)
+
+            navigationController?.pushViewController(profileVc, animated: true)
+            
         case 3 :
             let helpVc = HelpVc()
          present(helpVc, animated: true)
